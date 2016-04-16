@@ -1,0 +1,72 @@
+.deze:hover {
+    width: 150px;
+    height: 150px;
+    transform: rotate(15deg);
+}
+.deze{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+#kv1 {
+    width: 100px;
+    height: 100px;
+    background: coral;
+    transition: width 2s, height 2s, transform 2s;
+}
+#kv2 {
+    width: 100px;
+    height: 100px;
+    background: blueviolet;    
+}
+
+
+#kv3 {
+    width: 100px;
+    height: 100px;
+    background: seagreen;
+    transition: width 2s, height 2s, transform 2s;
+}
+#kv4 {
+    width: 100px;
+    height: 100px;
+    background: chartreuse;
+    transition: width 2s, height 2s, transform 2s;
+}
+#kv5 {
+    width: 100px;
+    height: 100px;
+    background: azure;
+    transition: width 2s, height 2s, transform 2s;
+}
+#kv6 {
+    width: 100px;
+    height: 100px;
+    background: cyan;
+    transition: width 2s, height 2s, transform 2s;
+}
+#kv7 {
+    width: 100px;
+    height: 100px;
+    background: palevioletred;
+    transition: width 2s, height 2s, transform 2s;
+}
+#kv8 {
+    width: 100px;
+    height: 100px;
+    background: burlywood;
+    transition: width 2s, height 2s, transform 2s;
+}
+#kv9 {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    transition: width 2s, height 2s, transform 2s;
+}
+#kv10 {
+    width: 100px;
+    height: 100px;
+    background: maroon;
+    transition: width 2s, height 2s, transform 2s;
+}
