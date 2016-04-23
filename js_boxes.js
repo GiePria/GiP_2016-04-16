@@ -6,8 +6,8 @@ $(document).ready(function(){
 });
 $(document).ready(function(){
     $("#kv2").click(function(){
-        $(this).slideUp();
-        $(this).slideDown();
-     
+         $(this).slideUp(); 
+         $(this).slideDown(); 
     });
 });
+

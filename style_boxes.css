@@ -1,12 +1,19 @@
 .deze:hover {
     width: 150px;
     height: 150px;
-    transform: rotate(15deg);
+    box-shadow: 0 0 8px navajowhite;
+   /* transform: rotate(15deg);*/
 }
 .deze{
+    position: relative;
+	display: inline-block;
+	vertical-align: top;
+	height: 100px;
+	width: 100px;
+	margin-right: -4px; 
+	cursor: pointer;
     width: 100px;
     height: 100px;
-    display: inline-block;
 }
 
 #kv1 {
@@ -18,27 +25,46 @@
 #kv2 {
     width: 100px;
     height: 100px;
-    background: blueviolet;    
+    background: blueviolet;       
 }
-
-
+@keyframes bandymas1 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:0px; top:0px;}
+    50%  {background-color:blue; left:0px; top:400px;}
+    75%  {background-color:green; left:0px; top:400px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
 #kv3 {
     width: 100px;
     height: 100px;
     background: seagreen;
-    transition: width 2s, height 2s, transform 2s;
 }
+#kv3:hover {
+    width: 100px;
+    height: 100px;
+    animation-name: bandymas1;
+    animation-duration: 3s;
+ }
 #kv4 {
     width: 100px;
     height: 100px;
     background: chartreuse;
-    transition: width 2s, height 2s, transform 2s;
-}
+    transition: height 2s;
+ }  
+#kv4:hover {
+    width: 100px;
+    height: 600px
+ }
 #kv5 {
     width: 100px;
     height: 100px;
-    background: azure;
+    background: fuchsia;
     transition: width 2s, height 2s, transform 2s;
+}
+#kv5:hover {
+    width: 100px;
+    height: 100px;
+    transform: rotate(180deg);
 }
 #kv6 {
     width: 100px;
@@ -46,11 +72,38 @@
     background: cyan;
     transition: width 2s, height 2s, transform 2s;
 }
+@-webkit-keyframes bandymas2 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+#kv6:hover {
+    animation: bandymas2 3s linear 0.1s infinite alternate;
+}
+@-webkit-keyframes bandymas3 {
+    0%   {background-color:palevioletred; left:0px; top:0px;}
+    25%  {background-color:orange; left:0px; top:0px; right:1;}
+    50%  {background-color:white; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
 #kv7 {
     width: 100px;
     height: 100px;
     background: palevioletred;
     transition: width 2s, height 2s, transform 2s;
+}
+#kv7:hover {
+    animation: bandymas3 3s linear 0.1s infinite;
+}
+@-webkit-keyframes bandymas4 {
+    0%   {background-color:palevioletred; left:0px; top:0px;}
+    25%  {background-color:orange; left:0px; top:0px; right:1;}
+    50%  {background-color:white; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
 }
 #kv8 {
     width: 100px;
@@ -58,11 +111,26 @@
     background: burlywood;
     transition: width 2s, height 2s, transform 2s;
 }
+#kv8:hover {
+    animation: bandymas4 3s linear 0.1s infinite;
+    transform: rotate(360deg);
+}
 #kv9 {
     width: 100px;
     height: 100px;
     background: orange;
     transition: width 2s, height 2s, transform 2s;
+}
+#kv9:hover {
+    animation: bandymas1 3s linear 0.1s infinite;
+    transform: rotate(-180deg);
+}
+@keyframes bandymas10 {
+    0%   {background-color:maroon; left:0px; top:0px;}
+    25%  {background-color:yellow; left:0px; top:0px;height: 400px;}
+    50%  {background-color:maroon; left:0px; top:400px; height: 100px;}    
+    75%  {background-color:yellow; left:0px; top:400px;}
+    100% {background-color:maroon; left:0px; top:0px;}
 }
 #kv10 {
     width: 100px;
@@ -70,3 +138,8 @@
     background: maroon;
     transition: width 2s, height 2s, transform 2s;
 }
+#kv10:hover {
+    width: 100px;
+    height: 100px;
+    animation: bandymas10 3s;
+ }
