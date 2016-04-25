@@ -1,10 +1,10 @@
-.deze:hover {
+.box:hover {
     width: 150px;
     height: 150px;
     box-shadow: 0 0 8px navajowhite;
    /* transform: rotate(15deg);*/
 }
-.deze{
+.box{
     position: relative;
 	display: inline-block;
 	vertical-align: top;
@@ -16,130 +16,130 @@
     height: 100px;
 }
 
-#kv1 {
+#firstBox {
     width: 100px;
     height: 100px;
     background: coral;
     transition: width 2s, height 2s, transform 2s;
 }
-#kv2 {
+#secondBox {
     width: 100px;
     height: 100px;
     background: blueviolet;       
 }
-@keyframes bandymas1 {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:0px; top:0px;}
-    50%  {background-color:blue; left:0px; top:400px;}
-    75%  {background-color:green; left:0px; top:400px;}
-    100% {background-color:red; left:0px; top:0px;}
+@keyframes test1 {
+    0%   {background-color:red; left:0; top:0;}
+    25%  {background-color:yellow; left:0; top:0;}
+    50%  {background-color:blue; left:0; top:400px;}
+    75%  {background-color:green; left:0; top:400px;}
+    100% {background-color:red; left:0; top:0;}
 }
-#kv3 {
+#thirdBox {
     width: 100px;
     height: 100px;
     background: seagreen;
 }
-#kv3:hover {
+#thirdBox:hover {
     width: 100px;
     height: 100px;
-    animation-name: bandymas1;
+    animation-name: test1;
     animation-duration: 3s;
  }
-#kv4 {
+#fourthBox {
     width: 100px;
     height: 100px;
     background: chartreuse;
     transition: height 2s;
  }  
-#kv4:hover {
+#fourthBox:hover {
     width: 100px;
     height: 600px
  }
-#kv5 {
+#fifthBox {
     width: 100px;
     height: 100px;
     background: fuchsia;
     transition: width 2s, height 2s, transform 2s;
 }
-#kv5:hover {
+#fifthBox:hover {
     width: 100px;
     height: 100px;
     transform: rotate(180deg);
 }
-#kv6 {
+#sixthBox {
     width: 100px;
     height: 100px;
     background: cyan;
     transition: width 2s, height 2s, transform 2s;
 }
-@-webkit-keyframes bandymas2 {
-    0%   {background-color:red; left:0px; top:0px;}
-    25%  {background-color:yellow; left:200px; top:0px;}
+@-webkit-keyframes test2 {
+    0%   {background-color:red; left:0; top:0;}
+    25%  {background-color:yellow; left:200px; top:0;}
     50%  {background-color:blue; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
+    75%  {background-color:green; left:0; top:200px;}
+    100% {background-color:red; left:0; top:0;}
 }
-#kv6:hover {
-    animation: bandymas2 3s linear 0.1s infinite alternate;
+#sixthBox:hover {
+    animation: test2 3s linear 0.1s infinite alternate;
 }
-@-webkit-keyframes bandymas3 {
-    0%   {background-color:palevioletred; left:0px; top:0px;}
-    25%  {background-color:orange; left:0px; top:0px; right:1;}
+@-webkit-keyframes test3 {
+    0%   {background-color:palevioletred; left:0; top:0;}
+    25%  {background-color:orange; left:0; top:0; right:1px;}
     50%  {background-color:white; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
+    75%  {background-color:green; left:0; top:200px;}
+    100% {background-color:red; left:0; top:0;}
 }
-#kv7 {
+#seventhBox {
     width: 100px;
     height: 100px;
     background: palevioletred;
     transition: width 2s, height 2s, transform 2s;
 }
-#kv7:hover {
-    animation: bandymas3 3s linear 0.1s infinite;
+#seventhBox:hover {
+    animation: test3 3s linear 0.1s infinite;
 }
 @-webkit-keyframes bandymas4 {
-    0%   {background-color:palevioletred; left:0px; top:0px;}
-    25%  {background-color:orange; left:0px; top:0px; right:1;}
+    0%   {background-color:palevioletred; left:0; top:0;}
+    25%  {background-color:orange; left:0; top:0; right:1px;}
     50%  {background-color:white; left:200px; top:200px;}
-    75%  {background-color:green; left:0px; top:200px;}
-    100% {background-color:red; left:0px; top:0px;}
+    75%  {background-color:green; left:0; top:200px;}
+    100% {background-color:red; left:0; top:0;}
 }
-#kv8 {
+#eighthBox {
     width: 100px;
     height: 100px;
     background: burlywood;
     transition: width 2s, height 2s, transform 2s;
 }
-#kv8:hover {
+#eighthBox:hover {
     animation: bandymas4 3s linear 0.1s infinite;
     transform: rotate(360deg);
 }
-#kv9 {
+#ninthBox {
     width: 100px;
     height: 100px;
     background: orange;
     transition: width 2s, height 2s, transform 2s;
 }
-#kv9:hover {
+#ninthBox:hover {
     animation: bandymas1 3s linear 0.1s infinite;
     transform: rotate(-180deg);
 }
-@keyframes bandymas10 {
-    0%   {background-color:maroon; left:0px; top:0px;}
-    25%  {background-color:yellow; left:0px; top:0px;height: 400px;}
-    50%  {background-color:maroon; left:0px; top:400px; height: 100px;}    
-    75%  {background-color:yellow; left:0px; top:400px;}
-    100% {background-color:maroon; left:0px; top:0px;}
+@keyframes test10 {
+    0%   {background-color:maroon; left:0; top:0;}
+    25%  {background-color:yellow; left:0; top:0;height: 400px;}
+    50%  {background-color:maroon; left:0; top:400px; height: 100px;}    
+    75%  {background-color:yellow; left:0; top:400px;}
+    100% {background-color:maroon; left:0; top:0;}
 }
-#kv10 {
+#tenthBox {
     width: 100px;
     height: 100px;
     background: maroon;
     transition: width 2s, height 2s, transform 2s;
 }
-#kv10:hover {
+#tenthBox:hover {
     width: 100px;
     height: 100px;
-    animation: bandymas10 3s;
+    animation: test10 3s;
  }
